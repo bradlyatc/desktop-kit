@@ -96,7 +96,6 @@ python_compile() {
 
 src_install() {
 	##manually install package, using --prefix doesn't play well with ebuild
-	#dobin linux-package/bin/kitty
 	dobin linux-package/bin/*
 	insinto /usr/lib
 	doins -r linux-package/lib/kitty
